@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h3>네이버 오픈 API를 활용한 도서 목록</h3>
+
+<table border="1">
+    {{#books}}
+        <tr>
+            <td>{{isbn}}</td>
+            <td><img src="{{image}}" alt="{{title}}" width="100"></td>
+            <td><a href="{{link}}">{{title}}</a></td>
+            <td>{{author}}/{{publisher}}</td>
+            <td>{{pubdate}}</td>
+        </tr>
+    {{/books}}
+</table>
+Mustache는
+
+</body>
+</html>
